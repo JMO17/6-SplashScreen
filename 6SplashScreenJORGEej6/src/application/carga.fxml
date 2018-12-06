@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="712.0" style="-fx-background-color: #F1B600;" stylesheets="@../../../splashscreen/src/sample/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerPrincipal">
+   <children>
+      <GridPane layoutX="266.0" layoutY="288.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="109.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="509.0" minWidth="10.0" prefWidth="472.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="0.0" prefWidth="109.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" spacing="10.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fx:id="botella" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cerve.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameLabel" styleClass="mytitle" text="BOTTLE SHARE" textFill="#0e571b">
+                     <font>
+                        <Font name="Bauhaus 93" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="helloLabel" prefHeight="38.0" prefWidth="172.0" text="HOLA! Bienvenido a mi aplicacion." textAlignment="CENTER" textFill="#0e571b" wrapText="true">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <GridPane layoutX="256.0" layoutY="278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox fx:id="spinnerPane" alignment="CENTER" opacity="0.0" prefHeight="161.0" prefWidth="297.0" GridPane.columnIndex="1">
+               <children>
+                  <JFXSpinner prefHeight="107.0" prefWidth="110.0" radius="30.0" />
+                  <Label prefHeight="38.0" prefWidth="114.0" text="Espera unos segundos..." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
